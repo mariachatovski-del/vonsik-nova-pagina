@@ -60,10 +60,12 @@
 
     <script>
         const botao = document.querySelector("button")
+        botoes.foreEach(function (botao){
         botao.addEventListener("click",botaoClicado);
-
+        });
+        
         function botaoClicado() {
-            let texto = botao.querySelector("span");
+            let texto = event.querySelector("span");
             texto.textContent++;
         }
     </script>
